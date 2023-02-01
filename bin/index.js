@@ -107,7 +107,7 @@ async function installSvelte() {
     await myExec(npm + ' init -y');
   }
 
-  if (!packageJsonContainsSvelte()) {
+  if (!(await packageJsonContainsSvelte())) {
     console.debug("Running `npm install svelte`")
     await myExec(npm + ' install svelte');
   }
