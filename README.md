@@ -21,6 +21,8 @@ When inside the folder you want to compile, just run:
 sveltelette
 ```
 
+Press q to stop the server.
+
 ## Motivation
 
 I am not a web developer, but I make a lot of small websites for helping with simple tasks.
@@ -34,4 +36,4 @@ editor where every single file is named `+page.svelte` quickly ended that.
 
 Maybe someone else has a brain that works like mine. Shoutout to 
 [ric2b on reddit](https://old.reddit.com/r/sveltejs/comments/gli0iq/multipage_apps_with_svelte_or_how_to_have/) 
-for being the only other person that I could find that had a similar question.
+for being the only other person that I could find that had a similar problem.

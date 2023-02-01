@@ -16,5 +16,9 @@
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
     "svelte": "^3.54.0",
     "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "minimist": "^1.2.7"
   }
 }
