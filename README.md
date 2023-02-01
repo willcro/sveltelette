@@ -5,7 +5,8 @@ CLI tool for simplifying development of small Svelte apps
 ## Overview
 
 Let's say you have a folder full of `.svelte` files and you want to turn each one
-into an `.html` document. There isn't really a good way to do it.
+into an `.html` document. There wasn't really a good way to do it. There still
+isn't, but now there is an OK way to do it.
 
 ## Installation
 
@@ -22,6 +23,30 @@ sveltelette
 ```
 
 Press q to stop the server.
+
+### Example
+
+```
+$ ls
+foo.svelte bar/baz.svelte
+
+$ sveltelette
+Starting server on port 8080
+Server started. Press q to quit
+```
+
+In a web browser, go to http://localhost:8080/foo.html or 
+http://localhost:8080/bar/baz.html to see the result.
+
+### Configuration
+
+`$ sveltelette [-p PORT] [COMMAND]`
+
+`-p or --port`: Server port (default `8080`)
+
+`COMMAND`: either `build` (compiles the files into static files) or `serve` 
+(runs the development server) (default `serve`)
+
 
 ## Motivation
 
